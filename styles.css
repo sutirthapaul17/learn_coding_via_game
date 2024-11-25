@@ -1,0 +1,225 @@
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+/*
+body, html {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.container {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.boy {
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+    width: 20%;
+    z-index: 2;
+}
+
+.thought-container {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    width: 30%; 
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.thought-bubble {
+    width: 100%;
+}
+
+.thought-text {
+    position: absolute;
+    top: 30%;
+    width: 80%;
+    text-align: center;
+    font-size: 1.5em;
+    font-family: 'Comic Sans MS', cursive;
+    color: #000;
+    font-weight: bold;
+}
+*/
+
+/** {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.container {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.boy {
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+    width: 20%; 
+    z-index: 2;
+}
+
+.thought-container {
+    position: absolute;
+    top: 5%; 
+    left: 30%;
+    width: 30%; 
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.thought-bubble {
+    width: 100%;
+}
+
+.thought-text {
+    position: absolute;
+    top: 30%;
+    width: 80%;
+    text-align: center;
+    font-size: 1.5em;
+    font-family: 'Comic Sans MS', cursive;
+    color: #000;
+    font-weight: bold;
+}*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.container {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.boy {
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+    width: 20%; /* Adjust size as needed */
+    z-index: 2;
+}
+
+.thought-container {
+    position: absolute;
+    top: 5%; /* Adjust to start near the boy's head */
+    left: 30%; /* Position relative to the boy */
+    width: 30%; /* Adjust size as needed */
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.thought-bubble {
+    width: 100%;
+}
+
+.thought-text {
+    position: absolute;
+    top: 30%;
+    width: 80%;
+    text-align: center;
+    font-size: 1.5em;
+    font-family: 'Comic Sans MS', cursive;
+    color: #000;
+    font-weight: bold;
+}
+
+.start-button {
+    position: absolute;
+    bottom: 78px;
+    right: 133px; /* Adjust for spacing from the right */
+    padding: 23px 32px;
+    font-size: 1.2em;
+    color: white;
+    background-color:rgb(255 0 73); #007BFF; /* Button color */
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    z-index: 4; /* Make sure it appears above other elements */
+}
+
+.start-button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+.fade {
+    opacity: 1; 
+    transition: opacity 0.5s ease; /* Transition for fading */
+}
+
+.fade-out {
+    opacity: 0; /* Set to invisible */
+}

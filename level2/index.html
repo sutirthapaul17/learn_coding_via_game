@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DTI Game - Level 2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Mentor Dialog Box -->
+        <div id="mentorBox" class="mentor">
+            Let's talk about variables! You can store numbers in them. Can you create a variable?
+        </div>
+
+        <!-- Drag and Drop Items Section -->
+        <div class="drag-container">
+            <h2>Drag the code elements:</h2>
+            <div id="codeElement1" class="draggable" draggable="true" ondragstart="drag(event)">x = 5;</div>
+            <div id="codeElement2" class="draggable" draggable="true" ondragstart="drag(event)">y = 10;</div>
+            <div id="codeElement3" class="draggable" draggable="true" ondragstart="drag(event)">print(x + y);</div>
+        </div>
+
+        <!-- Code Drop Section -->
+        <div class="drop-container" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <h2>Drop the code here:</h2>
+            <div id="codeArea" class="code-area"></div>
+        </div>
+
+        <!-- Submit Button -->
+        <button onclick="evaluateCode()">Run Code</button>
+
+        <!-- Output Section -->
+        <div id="outputBox" class="output"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mentor Guide</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* Modal styling */
+        .noth {
+            display: none; /* Hidden by default */
+            position: fixed; /* Stay in place */
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
+            justify-content: center;
+            align-items: center;
+            z-index: 5;
+        }
+
+        .noth-content {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            width: 300px;
+            text-align: center;
+        }
+
+        .noth h1 {
+            margin-bottom: 20px;
+        }
+
+        .noth button {
+            margin: 10px;
+            padding: 10px 20px;
+            border: none;
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .noth button.exit {
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="popupModal" class="noth">
+        <div class="noth-content">
+            <h1>HURRAH!!! YOU HAVE DONE IT</h1>
+            <h3>Now Let's try a small quiz....</h3>
+            <button id="quizBtn">Try Quiz</button>
+            <button id="exitBtn" class="exit">Exit</button>
+
+        </div>
+    </div>
+    <div class="mentor-container">
+        <!-- Background image -->
+        <div class="background-image">
+            <!-- <img src="../images/beach.webp" alt=""> -->
+        </div>
+
+        <!-- Mentor chat area -->
+        <div class="mentor-chat">
+            <img src="../images/mentor.png" alt="Mentor" class="mentor-img">
+            <div class="mentor-bubble">
+                <div class="mentor-text" id="mentorText">
+                    <!-- Mentor message will appear here with typing animation -->
+                </div>
+                <div class="bubble-tail"></div> <!-- Tail for the speech bubble -->
+            </div>
+        </div>
+
+        <!-- Input box for user to type code -->
+        <div class="user-input">
+            <textarea id="codeInput" placeholder="Type your code here..."></textarea>
+            <button id="submitCode">Submit</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
